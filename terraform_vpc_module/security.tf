@@ -142,4 +142,4 @@ resource "aws_security_group" "flannel_udp" {
     protocol         = "tcp"
     cidr_blocks      = ["0.0.0.0/0"]
   }
-}
+} 
