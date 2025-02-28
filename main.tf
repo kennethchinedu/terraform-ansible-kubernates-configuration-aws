@@ -5,6 +5,6 @@ provider "aws" {
 }
 
 module "vpc_module" {
-  source = "./vpc_module"
+  source = "./terraform_vpc_module"
 
 }
