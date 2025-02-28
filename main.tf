@@ -9,6 +9,11 @@ terraform {
       source = "hashicorp/tls"
       version = "4.0.6"
     }
+
+    ansible = {
+      source = "ansible/ansible"
+      version = "1.3.0"
+    }
   }
 }
  
