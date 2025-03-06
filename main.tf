@@ -3,8 +3,15 @@ terraform {
     aws = {
       source = "hashicorp/aws"
       version = "5.5.0"
+<<<<<<< HEAD
     }
 
+=======
+    
+    }
+
+
+>>>>>>> 3b1d8af (added project and github action)
     tls = {
       source = "hashicorp/tls"
       version = "4.0.6"

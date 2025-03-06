@@ -1,3 +1,7 @@
 # vars.yml
 server_name: localhost
 backend_server: localhost:3000
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 3b1d8af (added project and github action)
