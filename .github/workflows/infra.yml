@@ -1,13 +1,14 @@
 name: Infra Pipeline
 
 on:
-  pull_request:
-    paths:
-      - 'ansible/**'
-      - 'terraform/**'
-      - '.github/workflows/**'
-      branches:
-        - main
+   pull_request:
+     branches:
+       - main
+     paths:
+       - 'ansible/**'
+       - 'terraform/**'
+       - '.github/workflows/**'
+ 
         
 env:
    AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
