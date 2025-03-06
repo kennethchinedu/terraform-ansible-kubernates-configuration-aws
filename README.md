@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## This project
 =======
+=======
+>>>>>>> master
 # 🚀 Automated Deployment of Node.js Application with Terraform and Ansible
 
 ## 📋 Project Overview
@@ -88,4 +91,7 @@ This project is licensed under the MIT License.
 - Enhance security configurations
 
 Happy Coding! 😄
+<<<<<<< HEAD
 >>>>>>> 3b1d8af (added project and github action)
+=======
+>>>>>>> master
