@@ -1,0 +1,4 @@
+# vars.yml
+server_name: localhost
+backend_server: localhost:3000
+  
