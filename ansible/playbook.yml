@@ -19,15 +19,7 @@
         src: templates/nginx.conf.j2
         dest: /etc/nginx/sites-available/revers_proxy.conf
         mode: 0644
-<<<<<<< HEAD
-<<<<<<< HEAD
-      notify: Restart Nginx
-=======
-      notify: restart Nginx service
->>>>>>> 3b1d8af (added project and github action)
-=======
-      notify: restart Nginx service
->>>>>>> master
+
 
     - name: Remove default Nginx site
       ansible.builtin.file:
@@ -44,8 +36,6 @@
       ansible.builtin.debug:
         var: nginx_test.stdout_lines
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
     - name: Start Nginx service
       ansible.builtin.service:
@@ -55,9 +45,7 @@
 
     - name: Configure reverse proxy
 
-=======
-=======
->>>>>>> master
+
     - name: Ensure Nginx starts on boot
       ansible.builtin.service:
         name: nginx
@@ -89,9 +77,6 @@
 
     - name: Show PM2 output
       ansible.builtin.debug:
-<<<<<<< HEAD
         var: pm2_output.stdout_lines 
->>>>>>> 3b1d8af (added project and github action)
-=======
-        var: pm2_output.stdout_lines 
->>>>>>> master
+
+
