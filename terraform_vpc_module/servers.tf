@@ -44,7 +44,7 @@ resource "aws_instance" "control_node" {
   }
 
   provisioner "local-exec" {
-     command = "echo 'master@${self.public_ip}'  >> ./ansible/hosts" 
+     command = "echo 'master ${self.public_ip}'  >> ./ansible/hosts" 
   }
 }
 
@@ -67,6 +67,8 @@ resource "aws_instance" "workder-node" {
   }
 
   provisioner "local-exec" {
-    command = "echo 'worker-${count.index} ${self.public_ip}' >> ./ansible/hosts"
+    command = "echo 'worker-${count.index} ${self.public_ip}' >> ./ansible/hosts.txt"
   }
 }
+
+
